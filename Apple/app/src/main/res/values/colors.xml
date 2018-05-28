@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff373434</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="main_text_color">#808080</color>
+    <color name="gray_text">#B2B2B2</color>
+    <color name="white">#FFFFFF</color>
+    <!-- 验证码背景橘黄色 -->
+    <color name="leading_color">#373434</color>
+
+    <!--主题颜色-->
+    <color name="Main_color">#ff373434</color>
+
+    <!--字体颜色-->
+    <color name="Text_color">#000000</color>
+    <!--白色的字体颜色，如放在标题栏或按钮之类的-->
+    <color name="InsideText_color">#FFFFFF</color>
+
+
+    <!--皮肤界面-->
+    <color name="red">#993333</color>
+    <color name="green">#008080</color>
+    <color name="pink">#cc3366</color>
+    <color name="blue">#336699</color>
+    <color name="yellow">#a0522d</color>
+</resources>

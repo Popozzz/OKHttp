@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.administrator.apple.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/landing_title"
+            android:text="iFound"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:height="55dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/leading_color"
+            android:fontFamily="sans-serif"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/landing_forgetpassword"
+            android:text="忘记密码？"
+            android:textSize="15dp"
+            android:textColor="#006699"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/landing_password" />
+
+        <CheckBox
+            android:id="@+id/landing_rememberpassword"
+            android:text="记住密码？"
+            android:textSize="13dp"
+            android:textColor="#FF000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/landing_land"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/landing_password"
+            android:text="密码:"
+            android:textSize="20dp"
+            android:textColor="#FF000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/landing_forgetpassword"
+            android:layout_toLeftOf="@+id/landing_rememberpassword"
+            android:layout_marginRight="39dp" />
+
+        <EditText
+            android:id="@+id/landing_editnumber"
+            android:hint="请输入学号"
+            android:textSize="18dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/landing_number"
+            android:layout_alignBottom="@+id/landing_number"
+            android:layout_toRightOf="@+id/landing_number"
+            android:layout_marginLeft="18dp" />
+
+        <EditText
+            android:id="@+id/landing_editpasword"
+            android:hint="请输入密码"
+            android:textSize="18dp"
+            android:inputType="textPersonName"
+            android:ems="11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/landing_password"
+            android:layout_alignBottom="@+id/landing_password"
+            android:layout_alignLeft="@+id/landing_editnumber"
+            android:layout_alignRight="@+id/landing_editnumber" />
+
+        <Button
+            android:id="@+id/landing_register"
+            android:text="注册"
+            android:textSize="15dp"
+            android:textColor="#006699"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:layout_alignBaseline="@+id/landing_forgetpassword"
+            android:layout_alignBottom="@+id/landing_forgetpassword"
+            android:layout_toRightOf="@+id/landing_rememberpassword" />
+
+        <TextView
+            android:id="@+id/landing_number"
+            android:text="学号:"
+            android:textSize="20dp"
+            android:textColor="#FF000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            android:layout_above="@+id/landing_editpasword"
+            android:layout_alignLeft="@+id/landing_password" />
+
+        <Button
+            android:id="@+id/landing_land"
+            android:text="登录"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/leading_color"
+            android:layout_marginTop="49dp"
+            android:layout_below="@+id/landing_forgetpassword"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout >

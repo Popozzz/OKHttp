@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.example.administrator.apple"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    //compile files('libs/51CTO下载-commons-codec-1.7.jar')
+    //compile files('libs/51CTO下载-commons-logging-1.1.1.jar')
+    //compile files('libs/51CTO下载-httpclient-4.2.2.jar')
+    //compile files('libs/51CTO下载-httpcore-4.2.2.jar')
+    //compile 'com.lzy.net:okhttputils:1.8.1'
+    //可以单独使用，不需要依赖下方的扩展包
+    //compile 'com.lzy.net:okhttpserver:1.0.3'
+    //扩展了下载管理和上传管理，根据需要添加
+    //compile 'com.lzy.net:okhttputils:+'
+    //版本号使用 + 可以自动引用最新版
+    //compile 'com.lzy.net:okhttpserver:+'
+    //版本号使用 + 可以自动引用最新版
+    //compile files('libs/okhttputils-2_6_2.jar')
+    //compile files('libs/okgo-3.0.4.jar')
+    //compile files('libs/okhttp-3.8.1.jar')
+    //compile files('libs/okio-1.13.0.jar')
+    //compile files('libs/okrx-1.0.2.jar')
+    //compile files('libs/okrx2-2.0.2.jar')
+    //compile files('libs/okserver-2.0.5.jar')
+
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+
+    compile 'com.google.code.gson:gson:2.7'
+}
